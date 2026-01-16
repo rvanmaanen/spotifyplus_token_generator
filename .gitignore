@@ -1,5 +1,5 @@
 # Token files (sensitive data)
-*.json
+*tokens*.json
 
 # Downloaded script (re-downloaded on setup)
 AuthTokenGenerator.py
