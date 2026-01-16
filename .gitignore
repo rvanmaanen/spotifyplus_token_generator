@@ -1,0 +1,27 @@
+# Token files (sensitive data)
+*.json
+
+# Downloaded script (re-downloaded on setup)
+AuthTokenGenerator.py
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
