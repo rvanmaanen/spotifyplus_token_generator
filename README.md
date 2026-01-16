@@ -11,17 +11,36 @@ Tokens are needed for controlling Spotify Connect devices like:
 - Google Chromecast devices
 - Other devices using `authorization_code` token type
 
-## Quick Start
+## ⚠️ Important: Use Locally, Not in Codespaces
 
-1. **Open in devcontainer** - The setup runs automatically
+**This tool should be run in a local VS Code Dev Container, not GitHub Codespaces.**
 
-2. **Add Redirect URI to your Spotify Developer App:**
+GitHub Codespaces uses forwarded port URLs (like `https://xyz-8080.app.github.dev`) that:
+- Change with each codespace instance
+- Cannot be pre-registered as Spotify OAuth redirect URIs
+- Will cause the OAuth flow to fail
+
+### Recommended Setup
+
+1. **Clone the repository locally:**
+   ```bash
+   git clone https://github.com/rvanmaanen/spotifyplus_token_generator.git
+   cd spotifyplus_token_generator
+   ```
+
+2. **Open in VS Code and reopen in container:**
+   - Open folder in VS Code
+   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+   - Select "Dev Containers: Reopen in Container"
+   - Wait for container to build
+
+3. **Add Redirect URI to your Spotify Developer App:**
    - Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
    - Click your application → Settings
    - Add Redirect URI: `http://127.0.0.1:8080/` (with trailing slash!)
    - Click Save
 
-3. **Run the setup script:**
+4. **Run the setup script:**
    ```bash
    python setup_spotify_token.py
    ```
