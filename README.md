@@ -22,6 +22,12 @@ GitHub Codespaces uses forwarded port URLs (like `https://xyz-8080.app.github.de
 
 ### Recommended Setup
 
+**Prerequisites:**
+- [VS Code](https://code.visualstudio.com/download) installed
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+
+**Steps:**
+
 1. **Clone the repository locally:**
    ```bash
    git clone https://github.com/rvanmaanen/spotifyplus_token_generator.git
